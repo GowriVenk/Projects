@@ -6,6 +6,10 @@
 		{
 			"path": "repository",
 			"name": "repository"
+		},
+		{
+			"path": "Projects-1",
+			"name": "Projects-1"
 		}
 	],
 	"settings": {}
