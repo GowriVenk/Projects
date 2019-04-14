@@ -1,0 +1,31 @@
+<h1 [class.gray]=h1style>    Home   </h1>
+
+<h1 [ngClass]="{
+  'green': h1style,
+  'large': !h1style
+
+}">using ng class Home </h1>
+
+
+<h1 [style.color]="h1style ? 'gray' : 'black'"> Inline style Home</h1>
+
+<h1 [ngStyle]="{
+  'color': h1style ?  'yellow' : 'black',
+  'font-size': !h1style ? '1em' : '4em'
+}">using ng style class Home </h1>
+
+<button (click)="firstClick()"> Click me</button>
+
+<ul *ngIf="users">
+  <li *ngFor="let user of users.data">
+
+    <img [src] ="user.avatar">
+
+    <p> {{user.first_name}} {{user.last_name}}</p>
+
+    
+
+
+  </li>
+
+</ul>
